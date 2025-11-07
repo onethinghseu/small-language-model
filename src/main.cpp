@@ -35,9 +35,12 @@ int main(int argc, char** argv){
 
     std::string result = monkey.text_Generate(startfromK,std::stoi(argv[1]));
 
+    
+
     std::cout<<"generating text : "<<result<<std::endl;
     // save to text 
-    std::ofstream out("output.txt");
+    
+    std::ofstream out("output/output.txt");
     if (!out) {
         std::cerr << "Error: cannot open output file " << std::endl;
         return 1;
